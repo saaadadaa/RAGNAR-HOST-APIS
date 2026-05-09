@@ -28,8 +28,8 @@ os.makedirs(DATA_DIR, exist_ok=True)
 app = Flask(__name__)
 app.secret_key = os.environ.get("PANEL_SECRET_KEY", "CHANGE_ME_" + os.urandom(16).hex())
 
-ADMIN_USERNAME = os.environ.get("ADMIN_USER", "hama")
-ADMIN_PASSWORD = os.environ.get("ADMIN_PASS", "1211")
+ADMIN_USERNAME = os.environ.get("ADMIN_USER", "RAGNAR")
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASS", "RAGNAR321")
 
 running_procs = {}
 server_states = {}
